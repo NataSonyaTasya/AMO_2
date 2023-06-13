@@ -8,5 +8,5 @@ test['Sex'] = test['Sex'].apply(lambda x: 0 if 'male' else 1)
 train['Age'] = train['Age'].fillna(train.Age.mean())
 test['Age'] = test['Age'].fillna(train.Age.mean())
 # запишем созданные датасеты во внешние csv файлы
-train[['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Survived']].to_csv('/home/ubuntu/project/AMO_2/data_train.csv', index=False)
-test[['Pclass', 'Sex', 'Age', 'SibSp', 'Parch']].to_csv('/home/ubuntu/project/AMO_2/data_test.csv', index=False)
+train[['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Survived']].to_csv('data_train.csv', index=False)
+test[['Pclass', 'Sex', 'Age', 'SibSp', 'Parch']].to_csv('data_test.csv', index=False)
