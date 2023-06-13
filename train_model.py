@@ -8,4 +8,4 @@ from sklearn.linear_model import LogisticRegression
 model = LogisticRegression(max_iter=100_000).fit(X_train, y_train)
 # сохраним обученную модель
 import pickle
-pickle.dump(model, open('/var/lib/jenkins/workspace/AMO_2/AMO_2/home/ubuntu/project/AMO_2/model.pkl', 'wb'))
+pickle.dump(model, open('/home/ubuntu/project/AMO_2/model.pkl', 'wb'))
